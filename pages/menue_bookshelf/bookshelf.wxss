@@ -1,0 +1,42 @@
+/* pages/menue_bookshelf/bookshelf.wxss */
+.not-login{
+  background: white;
+  align-items: center;
+}
+.not-login .img{
+  height: 500rpx;
+  width: 500rpx;
+  opacity: 0.5;
+  margin-top: 200rpx;
+  margin-left: 100rpx;
+}
+.not-login .content{
+  display: block;
+  height: 100rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #778899;
+}
+.has-login{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.has-login .item{
+  padding: 25rpx;
+  background: white;
+}
+.has-login .item .img{
+  display: block;
+  height: 300rpx;
+  width: 200rpx;
+}
+.has-login .name{
+  display: block;
+  width: 200rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

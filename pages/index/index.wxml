@@ -1,0 +1,49 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+<view class="search">
+  <input bindtap="goSearchPage" disabled="true" class="in" type="text" placeholder="搜索" bindinput="search"></input>
+</view>
+<view class="show">
+<swiper class="swiper" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:key="{{index}}" wx:for="{{books}}">
+    <swiper-item>
+    <view class="swiper-item">
+        <text class="title">斗破苍穹</text>
+     <text class="auther">天蚕土豆</text>
+    </view>
+     <text decode="true" class="desc">&emsp;&emsp;这是一个全新升级的封神世界。这里有纣王，姜子牙，苏妲己，杨戬都将是全新的定位， 这里有皇者，火云洞三皇；这里有圣人，道门三清；这里也有上古神魔，蚩尤，刑天；这里将有一个名为罗烈的少年...</text>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view class="line">
+  <view class="item fmale">
+    <image class="img" src="/static/images/nan.png"></image>
+    <text class="name">男生分类</text>
+  </view>
+  <view class="item male">
+    <image  class="img" src="/static/images/nv.png"></image>
+    <text class="name">女生分类</text>
+  </view>
+  <view class="item top">
+    <image class="img" src="/static/images/rank.png"></image>
+    <text class="name">排行榜</text>
+  </view>
+</view>
+<view class="recommend">
+  <view class="title">
+    <text class="desc">猜你喜欢</text>
+    <text class="huan" bindtap="goTestPage">换一批</text>
+    <image class="refresh" src="/static/images/refresh.png" ></image>
+  </view>
+  <view class="items">
+    <block wx:key="{{index}}" wx:for="{{books}}">
+        <view class="item" data-bookid="{{item._id}}" bindtap="goBookInfoPage">
+      <image class="img" src="https://statics.zhuishushenqi.com{{item.cover}}"></image>
+      <text class="name">{{item.title}}</text>
+    </view>
+    </block>
+  </view>
+</view>
+
+</view>

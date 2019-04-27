@@ -1,0 +1,235 @@
+.scroll{
+  position: absolute;
+  height: 75%;
+  width: 100%;
+}
+.top{
+  height: 280rpx;
+  background-color:rgb(108, 102, 139);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.top .img{
+  margin-top: 15rpx;
+  display: block;
+  height: 250rpx;
+  width: 200rpx;
+  margin-bottom: 15rpx;
+  margin-left: 15rpx;
+}
+.top .desc{
+  display: block;
+  margin: 45rpx 60rpx;
+}
+.desc .title{
+  font-size: 32rpx;
+  font-weight: bold;
+  display: block;
+  margin: 15rpx 0;
+  color: white;
+}
+.desc .auther{
+  display: block;
+  color: white;
+}
+.desc .isSerial{
+  margin: 15rpx 0;
+  display: block;
+  color: white;
+}
+.longIntro{
+  height: 210rpx;
+  border-top: 15rpx solid rgb(245, 243, 243);
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.longIntro .info{
+  color:#708090;
+  font-size: 28rpx;
+  letter-spacing: 0rpx;
+
+}
+.tag{
+  display: flex;
+  height: 70rpx;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tag .tag-t{
+  font-size: 20rpx;
+  color:blue;
+  border: 3rpx solid blue;
+  margin-left: 30rpx; 
+}
+.catalog{
+  height: 80rpx;
+  border-top: 15rpx solid rgb(245, 243, 243);
+  display: flex;
+  align-items: center;
+  flex-direction:row;
+}
+.catalog .t1{
+  display: block;
+  font-weight: bold;
+  color: #1E90FF;
+  margin-left: 20rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 35rpx;
+}
+.catalog .t2{
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.catalog .img{
+  position: absolute;
+  height: 30rpx;
+  width: 30rpx;
+  opacity: 0.5;
+  left: 92%;
+}
+.comment{
+  border-top: 1rpx solid silver;
+}
+.comment .line{
+  height: 50rpx;
+  border-bottom:1rpx solid silver;
+  display: flex;
+  padding-left: 30rpx;
+  justify-content: flex-start;
+}
+.items .item{
+  height: 185rpx;
+  border-bottom: 1rpx solid silver;
+}
+.item .cmt1{
+  padding-left: 30rpx;
+  padding-top: 15rpx; 
+}
+.item .cmt1 .img{
+  position: absolute;
+  display: inline-block;
+  height: 40rpx;
+  width: 40rpx;
+  left: 18rpx;
+  border-radius: 50%;
+}
+.item .cmt2{
+  padding-left: 30rpx;
+  padding-top: 15rpx; 
+}
+.item .cmt3{
+  padding-left: 30rpx;
+  padding-top: 15rpx;
+}
+.item .cmt3 .im{
+  position: relative;
+  display: inline-block;
+  padding: 20prx;
+  left: 55%;
+}
+.item .cmt3 .im .ht{
+ height: 30rpx;
+ width: 30rpx;
+}
+.item .cmt3 .im text{
+  font-size: 25rpx;
+  color: #708090;
+}
+.item .cmt3 .im .ct{
+  display: inline-block;
+  position: absolute;
+  right: -70rpx;
+}
+.item .cmt3 .im .imgc{
+ position: absolute;
+ height: 30rpx;
+ width: 30rpx;
+ right: 18rpx;
+}
+.st{
+  position: relative;
+  top: -4rpx;
+  right: -5rpx;
+}
+.en{
+  position: absolute;
+  right: -18rpx;
+}
+.last{
+  margin-left: 50rpx;
+}
+.buttom{
+  position: absolute;
+  height: 160rpx;
+  width: 100%;
+  bottom: 0rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+ .criticism{
+  height:120rpx;
+  background:rgb(245, 243, 243);
+  position: absolute;
+  bottom: 130rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+}
+.item .cmt1 .name{
+  color: #708090;
+}
+.item .cmt3 .date{
+  color: #708090;
+}
+.criticism .cr-in{
+  border: 1rpx solid silver;
+  width: 80%;
+  height: 65rpx;
+  background: white;
+}
+.criticism .cr-bt{
+  margin-left: 30rpx;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background:#1E90FF; 
+  color: white;
+  font-size: 25rpx;
+  border-top: 15rpx solid #1E90FF;
+  border-bottom: 15rpx solid #1E90FF;
+  border-left: 25rpx solid #1E90FF;
+  border-right: 25rpx solid #1E90FF;
+}
+.buttom .read{
+    background-color: #20B2AA;
+    width: 50%;
+    height: 120rpx;
+    align-items: center;
+}
+.buttom .collect{
+  background:white;
+  width: 50%;
+  height: 120rpx;
+  border: 2rpx solid #1E90FF
+}
+.read .t{
+  color: white;
+}
+.collect .t{
+  color: #1E90FF
+}
+.collect .rd-t{
+  color: #708090
+}
+.t,.rd-t{
+  display: block;
+  margin-top: 45rpx;
+}

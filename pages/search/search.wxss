@@ -1,0 +1,82 @@
+/* pages/search/search.wxss */
+
+.search {
+  position: absolute;
+  background: rgb(245, 243, 243);
+  height: 100rpx;
+  border-bottom: 1rpx solid silver;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+  top: 0rpx;
+}
+
+.search .in {
+  display: inline-block;
+  margin: auto 20rpx;
+  width: 84%;
+  border: none;
+  background: white;
+  overflow-x: hidden;
+}
+
+.search .icon {
+  position: relative;
+  opacity: 0.5;
+  margin-left: 15rpx;
+}
+
+.results {
+  top: 100rpx;
+  position: absolute;
+  height: 90%;
+  width: 100%;
+}
+
+.item {
+  overflow-x: hidden;
+  height: 250rpx;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-bottom: 1rpx solid silver;
+}
+
+.item .img {
+  margin-top: 20rpx;
+  display: block;
+  height: 200rpx;
+  width: 150rpx;
+  margin-bottom: 15rpx;
+  margin-left: 20rpx;
+}
+
+.item .desc {
+  display: block;
+  margin: 20rpx 30rpx;
+}
+
+.desc .title {
+  font-size: 35rpx;
+  display: block;
+  margin: 15rpx 0;
+  color: black;
+}
+
+.desc .auther {
+  display: block;
+  opacity: 0.8;
+}
+
+.desc .lastChapter {
+  margin: 15rpx 0;
+  display: block;
+  opacity: 0.8;
+  width: 520rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

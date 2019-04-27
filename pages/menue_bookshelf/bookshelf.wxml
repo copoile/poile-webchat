@@ -1,0 +1,15 @@
+<!--pages/menue_bookshelf/bookshelf.wxml-->
+<view class="container">
+<view class="not-login" wx:if="{{!haslogin}}">
+  <image class="img" src="/static/images/jessic-c-icon.png"></image>
+  <text class="content">还没登录呢~</text>
+</view>
+<view class="has-login" wx:else>
+      <block wx:key="{{index}}" wx:for="{{bookList}}">
+      <view class="item" >
+      <image class="img" src="{{item.img}}" bindtap="goReadPage" data-bookid="{{item.bookid}}"></image>
+      <text class="name">{{item.title}}</text>
+    </view>
+    </block>
+</view>
+</view>

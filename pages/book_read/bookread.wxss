@@ -1,0 +1,83 @@
+/* pages/book_read/bookread.wxss */
+.content{
+  letter-spacing: 15rpx;
+  font-size: 45rpx;
+  text-align-last:center;
+  line-height: 70rpx;
+  
+}
+.center{
+  position: absolute;
+  height: 100%;
+}
+.center-title{
+  font-size: 37rpx;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  text-indent: 2.5rem;
+}
+.top{
+  position: fixed;
+  top: 0rpx;
+  height: 90rpx;
+  background: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  opacity: 0.8;
+  background: rgba(0,0,0,.7);
+  z-index: 900;
+}
+.top .title{
+  opacity: 1;
+  display: block;
+  color: white;
+  font-size: 37rpx;
+  text-indent: 6rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  z-index: 9999;
+  font-weight: bold;
+}
+.hide{
+  display: none;
+}
+.bottom{
+  position: fixed;
+  bottom: 0rpx;
+  height: 120rpx;
+  width: 100%;
+  background-color: black;
+  background: rgba(0,0,0,.7);
+}
+.line{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 120rpx;
+  border-bottom: 1rpx solid silver;
+}
+.line .item{
+  margin: auto 80rpx;
+}
+.line .img{
+  display: block;
+  margin-top:10rpx;
+  height: 40rpx;
+  width: 40rpx;
+}
+.line .name{
+  display: inline-block;
+  font-size: 25rpx;
+  color: white;
+  margin-left: 100rpx;
+  letter-spacing: 30rpx;
+}
+.fmale .img{
+   margin-left: 120rpx; 
+}
+.male .img{
+  margin-left: 120rpx; 
+}

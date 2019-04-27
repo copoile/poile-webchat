@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/menue_user/user",
+    "pages/menue_bookshelf/bookshelf",
+    "pages/book_info/bookinfo",
+    "pages/book_read/bookread",
+    "pages/search/search",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "悦小说",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false,
+    "navigationBarBackgroundColor": "#030303"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/ic_menu_choice_nor.png",
+        "selectedIconPath": "static/images/ic_menu_choice_pressed.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/menue_bookshelf/bookshelf",
+        "iconPath": "static/images/ic_menu_topic_nor.png",
+        "selectedIconPath": "static/images/ic_menu_topic_pressed.png",
+        "text": "书架"
+      },
+      {
+        "pagePath": "pages/menue_user/user",
+        "iconPath": "static/images/ic_menu_me_nor.png",
+        "selectedIconPath": "static/images/ic_menu_me_pressed.png",
+        "text": "个人"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

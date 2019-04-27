@@ -1,0 +1,62 @@
+/* pages/menue_user/user.wxss */
+.profile-info{
+  background-color:white;
+  height: 200rpx;
+  border-bottom: 2rpx solid silver;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.profile-info .avatar{
+  margin-left: 45rpx;
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+}
+.profile-info .info {
+  height: 85rpx;
+  padding-left: 40rpx;
+  margin-top:30rpx; 
+}
+
+.profile-info .info .name {
+  display: block;
+  color:#63B8FF;
+  font-size: 35.5rpx;
+  font-weight: bold;
+  background:white;
+  border: none;
+  margin-top: -30rpx;
+}
+.profile-info .tip {
+  display: block;
+  color:#778899;
+  font-size: 25.5rpx;
+}
+.u-item{
+  background: white;
+  height: 100rpx;
+  border-bottom: 1rpx solid silver;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center
+}
+.u-item .img{
+  margin-left:50rpx; 
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 50%
+}
+.u-item .content{
+  padding-left:50rpx; 
+  display: block;
+  color: #778899;
+  font-size: 40rpx
+}
+.u-item .go{
+  height: 30rpx;
+  width: 30rpx;
+  margin-left:380rpx;
+  opacity: 0.5
+}

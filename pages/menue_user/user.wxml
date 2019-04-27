@@ -1,0 +1,41 @@
+<!--pages/menue_user/user.wxml-->
+<view class="container">
+
+ <view class="profile-info">
+    <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+    <view class="info">
+      <button open-type="getUserInfo" plain="true" bindgetuserinfo="login" class="name">{{userInfo.nickName}}</button>
+      <text class="tip">{{tip}}</text>
+    </view>
+  </view>
+
+  <view class="u-item" bindtap="goAccountPage">
+    <image class="img" src="/static/images/login_touxiang.png"></image>
+    <text class="content">账户信息</text>
+    <image class="go" src="/static/images/go.png"></image>
+  </view>
+
+  <view class="u-item" bindtap="goMessagePage">
+    <image class="img" src="/static/images/message.png"></image>
+    <text class="content">我的消息</text>
+    <image class="go" src="/static/images/go.png"></image>
+  </view>
+
+  <view class="u-item" bindtap="goSigninPage">
+    <image class="img" src="/static/images/notes.png"></image>
+    <text class="content">我的签到</text>
+    <image class="go" src="/static/images/go.png"></image>
+  </view>
+
+  <view class="u-item" bindtap="goBookReviewPage">
+    <image class="img" src="/static/images/letter.png"></image>
+    <text class="content">我的书评</text>
+    <image class="go" src="/static/images/go.png"></image>
+  </view>
+
+  <view class="u-item" bindtap="goHelpPage">
+    <image class="img" src="/static/images/about_us.png"></image>
+    <text class="content">反馈与帮助</text>
+    <image class="go" src="/static/images/go.png" style="margin-left:340rpx"></image>
+  </view>
+</view>

@@ -1,0 +1,68 @@
+<!--pages/book_detail.wxml-->
+<view class="container">
+  <scroll-view class="scroll" scroll-y="true"> 
+  <view class="top">
+  <image class="img" src="https://statics.zhuishushenqi.com{{image}}"></image>
+  <view class="desc">
+   <text class="title">{{title}}</text>
+  <text class="auther">{{author}}</text>
+  <text class="isSerial" decode="true">{{isSerial}}&emsp;{{wordCount}}万字</text>
+  </view>
+  </view>
+  <view class="longIntro">
+    <text class="info" decode="true">&emsp;&emsp;{{info}}
+    </text>
+  </view>
+  <view class="tag">
+      <text  class="tag-t">{{majorCate}}</text>
+       <text  class="tag-t">{{majorCateV2}}</text>
+  </view>
+
+  <view class="catalog">
+  <text class="t1">目录</text>
+  <text class="t2" decode="true">&emsp;{{lastChapter}}</text>
+  <image class="img" src="/static/images/go.png"></image>
+  </view>
+  <view class="comment">
+    <view class="line">
+      <text class="ct" decode="true">评论&emsp;(共100条)</text>
+    </view>
+    <view class="items">
+      <block wx:key="{{index}}" wx:for="{{imgUrls}}">
+            <view class="item">
+            <view class="cmt1">
+              <image class="img" src="/static/images/my.jpg"></image><text class="name" decode="true">&emsp;&emsp;yaohw</text>
+            </view>
+            <view class="cmt2">
+              <text class="content">每天只能看</text>
+            </view>
+            <view class="cmt3">
+              <text class="date">08-20 01:14</text>
+              <view class="im">
+              <image class="ht" src="/static/images/heart.png"></image>
+              <text class="st">12</text>
+              <view class="ct">
+              <image class="imgc" src="/static/images/comment.png"></image>
+              <text class="en">23</text>
+              </view>
+             
+              </view>
+            </view>
+            </view>
+      </block>
+    </view>
+  </view>
+  </scroll-view>
+
+  <view class="criticism">
+    <input class="cr-in" placeholder="评论内容"></input><text class="cr-bt">评论</text>
+  </view>
+  <view class="buttom">
+    <view class="read"  data-bookid="{{bookId}}" data-img="https://statics.zhuishushenqi.com{{image}}" data-title="{{title}}" bindtap="goReadPage"><text class="t" >开始阅读</text></view>
+    <view class="collect" >
+    <text wx:if="{{!exBookShelf}}" data-bookid="{{bookId}}" data-img="https://statics.zhuishushenqi.com{{image}}" data-title="{{title}}" class="t" bindtap="addBookShelf">加入书架</text>
+    <text wx:else class="rd-t">已加入书架</text>
+    </view>
+  </view>
+</view>
+

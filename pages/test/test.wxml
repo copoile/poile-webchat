@@ -1,0 +1,8 @@
+<!--pages/test/test.wxml-->
+
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    
+    <text bindtap="clear">换源</text>
+  
+  </picker>
+

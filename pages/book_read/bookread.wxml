@@ -1,0 +1,25 @@
+<!--pages/book_read/bookread.wxml-->
+<view class="container">
+  <view class="top {{isHide?'hide':''}}">
+    <text class="title">第104章 放逐之峰</text>
+  </view>
+  <scroll-view bindtap="showAndHide" scroll-y="true" class="center" bindscrolltolower="getMore" scroll-top="{{scrollTop}}">
+    <text class="content" decode="true">{{content}}</text>
+  </scroll-view>
+  <view class="bottom {{isHide?'hide':''}}">
+    <view class="line">
+      <view class="item fmale">
+      <picker bindchange="catalog" value="{{index}}" range="{{chapters}}" range-key="title">
+        <image class="img" src="/static/images/catalog.png"></image>
+        <text class="name">目录</text>
+        </picker>
+      </view>
+      <view class="item male">
+        <picker bindchange="changeSource" value="{{index}}" range="{{sourceArray}}" range-key="name">
+          <image class="img" src="/static/images/text-color.png"></image>
+          <text class="name">换源</text>
+        </picker>
+      </view>
+    </view>
+  </view>
+</view>

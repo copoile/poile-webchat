@@ -1,0 +1,19 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+<view class="search">
+  <input   class="in" type="text" placeholder="搜索" bindinput="getWords"></input>
+  <icon class="icon" size="23" type="search" color="black" bindtap="search"></icon>
+</view>
+<scroll-view class="results" scroll-y="true" bindscrolltolower="getMore">
+ <block wx:key="{{index}}" wx:for="{{books}}">
+    <view class="item" bindtap="goBookInfoPage" data-bookid="{{item._id}}">
+    <image class="img" src="https://statics.zhuishushenqi.com{{item.cover}}"></image>
+      <view class="desc">
+      <text class="title">{{item.title}}</text>
+      <text class="auther">{{item.author}}</text>
+      <text class="lastChapter" decode="true">{{item.lastChapter}}</text>
+      </view>
+    </view>
+    </block>
+</scroll-view>
+</view>
